@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TailwindCSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        
+            /* #skill { 
+                list-style: none;
+                font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+                width: 200px;
+                position: relative;
+                line-height: 2em;
+                padding: 30px 0;
+            } */
+
+            #skill li { 
+                /* margin-bottom:50px;  */
+                background:#e9e5e2;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+                background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+                background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+                background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+                background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+                background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+                height:20px; 
+                border-radius:10px; 
+                -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+                -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+                box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	  
+            }
+
+            #skill li h5 { 
+                top:-25px;
+            }
+
+            .bar { 
+                height:18px; 
+                margin:1px 2px;  
+                position:absolute;
+                border-radius:10px;
+                -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+                -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
+                box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;		
+            }
+
+            .javascript {
+                width:90%; 
+                animation:javascript 2s ease-out;
+                -moz-animation:javascript 2s ease-out;
+                -webkit-animation:javascript 2s ease-out;
+                background-color: #f674a4;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+                background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+                background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+                background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+                background-image: -o-linear-gradient(top, #f674a4, #e06995);
+                background-image: linear-gradient(top, #f674a4, #e06995);
+            }
+
+            .angular {
+                width:70%;
+                animation:angular 2s ease-out;
+                -moz-animation:angular 2s ease-out;
+                -webkit-animation:angular 2s ease-out;
+                background-color: #f0bb4b;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+                background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+                background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+                background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+                background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+                background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+            }
+
+            .jsLib {
+                width:80%;
+                animation:jsLib 2s ease-out;
+                -moz-animation:jsLib 2s ease-out;
+                -webkit-animation:jsLib 2s ease-out;
+                background-color: #a1ce5b;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+                background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+                background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+                background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+                background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+                background-image: linear-gradient(top, #a1ce5b, #91ba52);
+            }
+
+            .html-css {
+                width:70%;
+                animation:html-css 2s ease-out;
+                -moz-animation:html-css 2s ease-out;
+                -webkit-animation:html-css 2s ease-out;
+                background-color: #66b3cc;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+                background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+                background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+                background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+                background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+                background-image: linear-gradient(top, #66b3cc, #5da3ba)	
+            }
+
+            @keyframes javascript {0%  { width:0px;} 100%{ width:90%;}  }
+            @-moz-keyframes javascript {0%  { width:0px;} 100%{ width:90%;}  }
+            @-webkit-keyframes javascript      { 0%  { width:0px;} 100%{ width:90%;}  }
+
+            @keyframes angular        { 0%  { width:0px;} 100%{ width:70%;}  }
+            @-moz-keyframes angular        { 0%  { width:0px;} 100%{ width:70%;}  }
+            @-webkit-keyframes angular        { 0%  { width:0px;} 100%{ width:70%;}  }
+
+            @keyframes jsLib      { 0%  { width:0px;} 100%{ width:80%;}  }
+            @-moz-keyframes jsLib      { 0%  { width:0px;} 100%{ width:80%;}  }
+            @-webkit-keyframes jsLib      { 0%  { width:0px;} 100%{ width:80%;}  }
+
+            @keyframes html-css   { 0%  { width:0px;} 100%{ width:70%;}  }
+            @-moz-keyframes html-css   { 0%  { width:0px;} 100%{ width:70%;}  }
+            @-webkit-keyframes html-css   { 0%  { width:0px;} 100%{ width:70%;}  }                        
+
+    </style>
+</head>
+<body class="font-serif">
+        <div class="container mx-auto max-w-md max-w-xl max-w-lg bg-grey-lighter">
+                <header class="bg-red-light tracking-wide">
+                        <div class="container mx-auto flex justify-between items-center p-5 mb-4 text-lg md:text-base sm:text-xs">
+                                <div>
+                                        <h1>Siva Kumar</h1>
+                                        <h4>Frontend Developer</h4>
+                                </div>
+                                <ul class="flex list-reset items-center">                                   
+                                    <li class="ml-4">
+                                        <a href="https://github.com/sivakumars/" target="_blank"><i class="fab fa-github-square text-black fa-3x"></i></a>                                        
+                                    </li>
+                                    <li class="ml-4">
+                                            <a href="https://www.linkedin.com/in/sivakumar-sekar-4a066716/"><i class="fab fa-linkedin text-black fa-3x"></i></a>
+                                    </li>
+                                </ul>
+                        </div>
+                        
+                    </header>
+                    <section class="leading-normal text-lg md:text-base sm:text-xs">
+                        <div class="container mx-auto flex">
+                                <aside class="flex-col justify-between bg-grey-darker text-white w-1/3 rounded"> 
+                                    <section class="p-4 border-b-4 justify-start">
+                                            <h3 class="text-black bg-red-light p-3 rounded shadow">Frontend Skills</h3>
+                                            <ul id="skill" class="list-reset relative mt-10  w-5/6">
+                                                    <li class="mb-8">
+                                                        <span class="bar javascript"></span>
+                                                        <h5 class="relative">Javascript</h5>
+                                                    </li>
+                                                    <li class="mb-8">
+                                                        <span class="bar angular"></span>
+                                                        <h5 class="relative">Angular</h4>
+                                                    </li>
+                                                    <li class="mb-8">
+                                                        <span class="bar jsLib"></span>
+                                                        <h5 class="relative">JS Libraries</h5>
+                                                    </li>
+                                                    <li class="mb-1">
+                                                        <span class="bar html-css"></span>
+                                                        <h5 class="relative">HTML/CSS</h5>
+                                                    </li>
+                                            </ul>
+                                        </section>                                   
+                                    <section class="border-b-4 p-4 justify-start">
+                                        <dl>
+                                            <dt class="mb-5 text-black bg-red-light p-3 rounded shadow">
+                                                <h3>Education</h3>
+                                            </dt>
+                                            <dd>
+                                                <p class="flex justify-between">
+                                                    <span class="font-extrabold">BITS,Pilani- Goa campus</span>
+                                                    <span class="text-black italic">2005-2010</span>
+                                                </p>
+                                                <p class="font-light">M.Sc- Bio science & B.E - Electronics</p>
+                                            </dd>
+                                        </dl>
+                                    </section>                
+                                    <section class="p-4 justify-between">
+                                        <dl>
+                                            <dt class="mb-5 text-black bg-red-light p-3 rounded shadow">
+                                                <h3>Professional work experience</h3>
+                                            </dt>
+                                            <dd>
+                    
+                                            </dd>
+                                            <dt>
+                                                <h4 class="font-extrabold">Self-Employed</h4>
+                                            </dt>
+                                            <dd class="mb-4 font-thin flex justify-between">
+                                                <span class="font-thin">Business</span><span class="text-black italic">&nbsp;May'14 - Present</span>
+                                            </dd>
+                                            <dt>
+                                                <h4 class="font-extrabold">FreeCharge, bangalore</h4>
+                                            </dt>
+                                            <dd class="mb-4 font-thin flex justify-between">
+                                                <span>Web developer</span><span class="text-black italic">&nbsp;Jan'14 - May'14</span></dd>
+                                            <dt>
+                                                <h4 class="font-extrabold">Reflexis, systems - Pune , USA</h4>
+                                            </dt>
+                                            <dd class="mb-4 font-thin flex justify-between">
+                                                <span>Software Engineer</span><span class="text-black italic">&nbsp;June'11-Jan'14</span>
+                                            </dd>
+                                            <dt>
+                                                <h4 class="font-extrabold">Infosys, chennai</h4>
+                                            </dt>
+                                            <dd class="mb-4 font-thin flex justify-between">
+                                                <span>System analyst</span><span class="text-black italic">&nbsp;June'10-June'11</span>
+                                            </dd>
+                                        </dl>
+                                        </section>
+                                </aside>
+                                <section class="flex-1 p-4">
+                                    <div class="mb-5">
+                                        <h2 class="mb-2">SUMMARY</h2>
+                                        <p>
+                                            Over 3+years of experience in professional Software development and  Web Technologies in front end like HTML, CSS, JavaScript (ES5 and ES6), JQuery , Custom JQuery libraries and J2EE, Java and relational databases.
+                                        </p>
+                                    </div>                                    
+                                    <div class="mb-5">
+                                        <h4 class="mb-2">Freecharge</h4>
+                                        <p>Implementing RESTFUL web Services for the APIs designed by senior developersEnhanced existing features and provided fixes for bugs as reported by the QA team.Elementary analysis of using Selenium to automate testing of Organization Setup in the system. Good understanding of the MVC pattern and architecture with some basic exposure to Spring framework.</p>
+                                    </div>
+                                    <div class="mb-5">
+                                            <h4 class="mb-2">WorkForce scheduler</h4>
+                                            <p>Developed web components using JSP, Servlets, JSTL, and JDBC for maintaining employee certifications in the System that was used in employee scheduling process. Developed a new file upload functionality to import Job code mapping at different organization levels and modified the UI for the same, which was then used for authenticating User Login via LDAP server.</p>
+                                    </div>
+                                    <div class="mb-5">
+                                            <h4 class="mb-2">Attendance Manager</h4>
+                                            <p>Developed web components using JSP, Servlets, JSTL, and JDBC for maintaining employee certifications in the System that was used in employee scheduling process. Developed a new file upload functionality to import Job code mapping at different organization levels and modified the UI for the same, which was then used for authenticating User Login via LDAP server.</p>
+                                        </div>
+                                    <div class="mb-5">
+                                        <h4 class="mb-2">AT&T UI development</h4>
+                                        <p>Developed UI from wireframes as per specification using HTML, CSS, and JavaScript for the CME unit. Involved in shipping the developed web pages to the implementation team. Worked on internal portal development for Insurance unit using front end technologies like HTML and JavaScript.</p>
+                                    </div>                                    
+                                </section>
+                        </div>
+                        
+                    </section>
+        </div>
+        
+</body>
+</html>
